@@ -3,13 +3,11 @@
 ## Preview
 
 Dark list:
-![Dark preview](https://github.com/volkar/filament-laravel-serenity-theme-dark-light/blob/main/preview/preview-d-l.jpg?raw=true)
+![Dark preview](https://github.com/volkar/filament-laravel-serenity-theme-dark-light/blob/main/preview/preview-f-1.jpg?raw=true)
 Dark form:
-![Dark preview](https://github.com/volkar/filament-laravel-serenity-theme-dark-light/blob/main/preview/preview-d-e.jpg?raw=true)
-Light list:
-![Light preview](https://github.com/volkar/filament-laravel-serenity-theme-dark-light/blob/main/preview/preview-w-l.jpg?raw=true)
+![Dark preview](https://github.com/volkar/filament-laravel-serenity-theme-dark-light/blob/main/preview/preview-f-2.jpg?raw=true)
 Light form:
-![Light preview](https://github.com/volkar/filament-laravel-serenity-theme-dark-light/blob/main/preview/preview-w-e.jpg?raw=true)
+![Light preview](https://github.com/volkar/filament-laravel-serenity-theme-dark-light/blob/main/preview/preview-f-3.jpg?raw=true)
 
 ## Prerequisites
 

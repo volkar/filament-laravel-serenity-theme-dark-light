@@ -23,15 +23,14 @@ html.dark {
     --scheme-color-text: #ecf2f8;
     --scheme-color-faded: #3f6888;
 
-    --scheme-color-bg: #161b22;
-    --scheme-color-bg-accent: #12161c;
-    --scheme-color-bg-strongaccent: #0d1117;
+    --scheme-color-bg: #151a21;
+    --scheme-color-bg-accent: #12161D;
+    --scheme-color-bg-strongaccent: #0e121a;
 
     --scheme-color-border-dark: #172028;
     --scheme-color-border: #1b262f;
     --scheme-color-border-light: #24323E;
 }
-
 
 /* Common palette override */
 
@@ -130,15 +129,10 @@ h1.filament-header-heading {
 
 /* Aside */
 
-html.bg-gray-100 aside {
+html.filament aside {
     border: 0;
     box-shadow: none;
     background-color: var(--scheme-color-bg-strongaccent);
-}
-html.dark aside {
-    border: 0;
-    box-shadow: none;
-    background-color: var(--scheme-color-bg-strongaccent) !important;
 }
 
 /* Main bg */
@@ -150,9 +144,8 @@ html, body {
 }
 
 html.dark, html.dark body {
-    background-image: linear-gradient(to right, var(--scheme-color-border) 0%, var(--scheme-color-bg) 30%);
+    background-image: linear-gradient(to right, var(--scheme-color-border-dark) 0%, var(--scheme-color-bg) 30%);
 }
-
 
 /* Dashboard widgets */
 
@@ -316,37 +309,43 @@ html.dark.filament button[role="switch"].bg-gray-200 {
     background-color: var(--scheme-color-border-light);
 }
 
-/* Input, select */
+/* Input, select, textarea */
 
 select.border-gray-300,
-input.border-gray-300 {
+input.border-gray-300,
+textarea.border-gray-300 {
     background-color: var(--scheme-color-bg-strongaccent);
     border-color: var(--scheme-color-border-light);
     transition: border-color 300ms ease;
     box-shadow: none;
 }
 select.dark\:bg-gray-700:hover,
-input.dark\:bg-gray-700:hover {
+input.dark\:bg-gray-700:hover,
+textarea.dark\:bg-gray-700:hover {
     border-color: var(--scheme-color-faded);
 }
 select.dark\:bg-gray-700:focus,
-input.dark\:bg-gray-700:focus {
+input.dark\:bg-gray-700:focus,
+textarea.dark\:bg-gray-700:focus {
     border-color: var(--scheme-color-primary);
 }
 
 html.dark.filament select.dark\:bg-gray-700,
-html.dark.filament input.dark\:bg-gray-700 {
+html.dark.filament input.dark\:bg-gray-700,
+html.dark.filament textarea.dark\:bg-gray-700 {
     background-color: var(--scheme-color-bg-accent);
     border-color: var(--scheme-color-border-light);
     transition: border-color 300ms ease;
     box-shadow: none;
 }
 html.dark select.dark\:bg-gray-700:hover,
-html.dark input.dark\:bg-gray-700:hover {
+html.dark input.dark\:bg-gray-700:hover,
+html.dark textarea.dark\:bg-gray-700:hover {
     border-color: var(--scheme-color-faded);
 }
 html.dark select.dark\:bg-gray-700:focus,
-html.dark input.dark\:bg-gray-700:focus {
+html.dark input.dark\:bg-gray-700:focus,
+html.dark textarea.dark\:bg-gray-700:focus {
     border-color: var(--scheme-color-primary);
 }
 html.filament select {
@@ -357,7 +356,6 @@ html.dark select {
     color: var(--scheme-color-text);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23ecf2f8' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
 }
-
 
 /* TinyMCE */
 
@@ -385,10 +383,10 @@ html.dark .tox-tbtn.tox-tbtn--enabled {
     background-color: var(--scheme-color-border-light);
 }
 
-html.bg-gray-100 .tox-tbtn:hover {
+html.filament .tox-tbtn:hover {
     background-color: var(--scheme-color-border-light) !important;
 }
-html.dark .tox-tbtn:hover {
+html.filament.dark .tox-tbtn:hover {
     background-color: var(--scheme-color-faded) !important;
 }
 
@@ -396,13 +394,13 @@ html.dark .tox-tbtn:hover {
     border: 0 !important;
 }
 
-html.bg-gray-100 .tox.tox-tinymce iframe {
+html.filament .tox.tox-tinymce iframe {
     border-radius: 0.4em;
     border: 1px solid var(--scheme-color-border-light);
     transition: border-color 300ms ease;
 }
 
-html.dark .tox.tox-tinymce iframe {
+html.filament.dark .tox.tox-tinymce iframe {
     border-radius: 0.4em;
     border: 1px solid var(--scheme-color-border-light);
     transition: border-color 300ms ease;
@@ -576,23 +574,45 @@ html.dark .filament-tables-image-column img {
 
 html.filament .filament-login-page {
     background-image: radial-gradient(
-        circle at top,
-        var(--scheme-color-bg-strongaccent),
-        var(--scheme-color-bg),
-        var(--scheme-color-bg) 100%
+            circle at top,
+            var(--scheme-color-bg-strongaccent),
+            var(--scheme-color-bg),
+            var(--scheme-color-bg) 100%
     );
 }
 
 html.dark.filament .filament-login-page {
     background-image: radial-gradient(
-        circle at top,
-        var(--scheme-color-border-dark),
-        var(--scheme-color-bg-strongaccent),
-        var(--scheme-color-bg) 100%
+            circle at top,
+            var(--scheme-color-border-dark),
+            var(--scheme-color-bg-strongaccent),
+            var(--scheme-color-bg) 100%
     );
 }
 
 html.filament .filament-login-page > div > div {
     border-color: var(--scheme-color-border-dark) !important;
     background-color: var(--scheme-color-bg);
+}
+
+/* Dashed divided asides 2/5 */
+
+/* Left aside */
+html.filament .grid.lg\:grid-cols-5 .col-span-2:first-child {
+    border-right: 2px dashed var(--scheme-color-border-light);
+    padding-right: 1.55em;
+}
+html.filament.dark .grid.lg\:grid-cols-5 .col-span-2:first-child {
+    border-right: 2px dashed var(--scheme-color-border);
+    padding-right: 1.55em;
+}
+
+/* Right aside */
+html.filament .grid.lg\:grid-cols-5 .col-span-2:last-child {
+    border-left: 2px dashed var(--scheme-color-border-light);
+    padding-left: 1.55em;
+}
+html.filament.dark .grid.lg\:grid-cols-5 .col-span-2:last-child {
+    border-left: 2px dashed var(--scheme-color-border);
+    padding-left: 1.55em;
 }
